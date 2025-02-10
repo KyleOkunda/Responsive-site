@@ -259,7 +259,7 @@ footer .socials .fa-brands {
 }
 @media screen and (max-width: 700px) {
   .intro-info {
-    bottom: 250px;
+    bottom: 300px;
   }
   .about-us-info .about-us-image {
     height: 370px;
