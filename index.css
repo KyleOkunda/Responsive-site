@@ -280,10 +280,13 @@ footer .socials .fa-brands {
     margin: 0 20px;
   }
   .we-got-u .we-got-u-text {
-    scale: 0.7;
+    scale: 0.9;
     width: 70%;
   }
   .bars {
     max-width: 90%;
+  }
+  .vision-mission .vision {
+    width: 90%;
   }
 }
