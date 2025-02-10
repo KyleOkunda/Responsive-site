@@ -1,0 +1,276 @@
+* {
+  animation: appear ease-in-out;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-timeline: view();
+  animation-range: entry 0 cover 15%;
+}
+body {
+  background: whitesmoke;
+}
+nav {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav,
+hr {
+  position: sticky;
+}
+.logo {
+  margin-left: 10px;
+  font-size: x-large;
+}
+.logo .pink {
+  color: rgb(247, 102, 102);
+}
+.logo .purple {
+  color: purple;
+}
+.menu a {
+  text-decoration: none;
+  color: black;
+  margin: 0 10px;
+}
+.menu a:hover {
+  border-width: 20px;
+  border-bottom: 2px solid black;
+  border-radius: 2px;
+}
+.intro {
+  height: 485px;
+
+  display: grid;
+  place-items: center;
+}
+.image {
+  height: 485px;
+  width: 100%;
+}
+.image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.intro-info {
+  position: relative;
+  bottom: 150px;
+  margin-left: 20px;
+  color: whitesmoke;
+  mix-blend-mode: color-dodge;
+}
+.intro-info p {
+  font-size: x-large;
+  color: whitesmoke;
+}
+.intro-info h1 {
+  color: wheat;
+}
+.about-us {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.areas {
+  height: 200px;
+  width: 240px;
+  background: pink;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+}
+.about-us-info {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.about-us-info .about-us-image {
+  height: 370px;
+  margin: 20px 0;
+  max-width: 50%;
+}
+.about-us-info .about-us-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.about-us-info .info {
+  max-width: 50%;
+  text-align: center;
+  margin: 20px;
+}
+.bars {
+  max-width: 100%;
+}
+.bars .bar {
+  height: 40px;
+  border-radius: 3px;
+  background: aqua;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bars .bar span {
+  margin: 0 10px;
+}
+.services {
+  background: white;
+}
+.services .head {
+  width: 100%;
+  text-align: center;
+}
+.services hr {
+  border: 1px solid rgb(248, 53, 85);
+  margin-bottom: 20px;
+  width: 150px;
+}
+.services-info {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.services-info .service {
+  height: 420px;
+  width: 175px;
+
+  margin: 10px 20px;
+}
+.services-info .service .image {
+  height: 50%;
+  width: 100%;
+}
+.services-info .service .image img {
+  height: 100%;
+  width: 100%;
+  border: 2px solid gray;
+}
+.services-info .service .name {
+  font-size: larger;
+}
+.services-info .service .name button,
+.we-got-u .we-got-u-text button {
+  height: 50px;
+  width: 130px;
+  border: 2px solid pink;
+  background: rgb(247, 102, 102);
+  border-radius: 20px;
+  font-size: medium;
+  cursor: pointer;
+  transition: 500ms;
+}
+.services-info .service .name button:hover,
+.we-got-u .we-got-u-text button:hover {
+  background: rgb(253, 253, 65);
+}
+
+@keyframes appear {
+  from {
+    opacity: 0.1;
+    scale: 0.1;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+.value {
+  display: flex;
+  flex-wrap: wrap;
+}
+.value .value-info {
+  min-width: 40%;
+  max-width: 45%;
+  margin: 0 20px;
+}
+
+.value .image {
+  max-width: 45%;
+  margin: 0 20px;
+}
+.vision-mission {
+  width: 100%;
+}
+.vision-mission .vision {
+  height: 30px;
+  background: yellow;
+  width: 100%;
+  padding-top: 0;
+  padding: 10px;
+  margin: 10px;
+  overflow: hidden;
+  transition: 1s;
+  cursor: pointer;
+}
+.vision-mission .vision .more,
+.vision-mission .vision .less {
+  margin-right: 5px;
+  font-size: xx-large;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.vision-mission .vision .more:hover,
+.vision-mission .vision .less:hover {
+  color: green;
+}
+.vision-mission .vision .title {
+  position: relative;
+  bottom: 20px;
+}
+.vision-mission .vision .vision-info {
+  width: 90%;
+  background: pink;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.we-got-u {
+  width: 100%;
+  height: 450px;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.we-got-u .image {
+  width: 100%;
+  height: 100%;
+}
+.we-got-u .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.we-got-u .we-got-u-text {
+  text-align: center;
+  z-index: 1;
+  position: absolute;
+  font-size: larger;
+  width: 50%;
+}
+.we-got-u .we-got-u-text h3 {
+  font-size: xx-large;
+}
+footer {
+  height: 200px;
+  width: 100%;
+  text-align: center;
+  background: yellow;
+  padding: 20px;
+}
+footer .socials {
+  display: flex;
+  height: 50%;
+  align-items: center;
+  justify-content: center;
+}
+footer .socials .fa-brands {
+  scale: 2;
+  margin: 20px;
+  color: black;
+}
