@@ -261,10 +261,10 @@ footer .socials .fa-brands {
   .about-us-info .about-us-image {
     height: 370px;
     margin: 20px 0;
-    max-width: 70%;
+    max-width: 100%;
   }
   .value .image {
-    max-width: 70%;
+    max-width: 100%;
     margin: 0 20px;
   }
 }
