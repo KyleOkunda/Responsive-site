@@ -258,6 +258,9 @@ footer .socials .fa-brands {
   color: black;
 }
 @media screen and (max-width: 700px) {
+  .intro-info {
+    bottom: 250px;
+  }
   .about-us-info .about-us-image {
     height: 370px;
     margin: 20px 0;
