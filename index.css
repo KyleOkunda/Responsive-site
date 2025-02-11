@@ -8,10 +8,39 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-nav,
-hr {
-  position: sticky;
+
+.menu-icon {
+  height: 40px;
+  width: 40px;
+  box-shadow: 2px 2px 3px pink;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  display: none;
 }
+
+.link-holder {
+  width: 100%;
+}
+.link-holder .links-sect {
+  width: 100%;
+}
+.link-holder .links-sect a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  height: 30px;
+  background: pink;
+  margin: 0;
+  padding: 10px;
+  transition: 800ms;
+}
+.link-holder .links-sect a:hover {
+  background: yellow;
+  border-bottom: 2px solid palevioletred;
+  border-top: 2px solid palevioletred;
+}
+
 .logo {
   margin-left: 10px;
   font-size: x-large;
@@ -258,6 +287,12 @@ footer .socials .fa-brands {
   color: black;
 }
 @media screen and (max-width: 700px) {
+  .menu {
+    display: none;
+  }
+  .menu-icon {
+    display: grid;
+  }
   .intro-info {
     bottom: 300px;
   }

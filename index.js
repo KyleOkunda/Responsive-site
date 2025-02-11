@@ -17,6 +17,23 @@ window.onload = function () {
     i++;
   }, 5000);
 
+  //Add functionality for the menu icon
+  const menuIcon = document.getElementsByClassName("menu-icon")[0];
+  const links = document.getElementsByClassName("links-sect")[0];
+  const hrSection = document.getElementsByClassName("hr")[0];
+  const linkHolder = document.createElement("div");
+  linkHolder.setAttribute("class", "link-holder");
+  menuIcon.addEventListener("click", () => {
+    if (!menuIcon.classList.contains("showing")) {
+      menuIcon.classList.add("showing");
+      linkHolder.appendChild(links);
+      hrSection.appendChild(linkHolder);
+    } else if (menuIcon.classList.contains("showing")) {
+      menuIcon.classList.remove("showing");
+      hrSection.removeChild(linkHolder);
+    }
+  });
+
   //Add functionality for the value section
   const vision = document.getElementsByClassName("actual-vision")[0];
   const mission = document.getElementsByClassName("mission")[0];
